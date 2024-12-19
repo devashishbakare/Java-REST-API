@@ -1,5 +1,9 @@
 package com.todo.todoApp.Entity;
+
+import jakarta.validation.constraints.NotNull;
+
 public class Book {
+    @NotNull(message = "book id is required")
     private int bookId;
     private String title;
     private String description;
